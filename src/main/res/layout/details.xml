@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/porcelain"
+       >
+
+        <EditText
+            android:id="@+id/edittext03"
+            android:layout_width="350dp"
+            android:layout_height="60dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="390dp"
+            android:background="@drawable/border"
+            android:padding="10dp"
+            android:ems="10"
+            android:hint=" Preferred Time?"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/edittext02"
+            android:layout_width="350dp"
+            android:layout_height="60dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="250dp"
+            android:background="@drawable/border"
+            android:ems="10"
+            android:padding="10dp"
+            android:hint=" Food Item(s)?"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/description"
+            android:layout_width="350dp"
+            android:layout_height="60dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="320dp"
+            android:padding="10dp"
+            android:background="@drawable/border"
+            android:hint=" Description" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            app:srcCompat="@drawable/custom_shapes"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="0dp" />
+
+        <TextView
+            android:id="@+id/textview01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="70dp"
+            android:fontFamily="serif"
+            android:text="Donate Food Details"
+            android:textColor="@color/white"
+            android:textSize="35sp"
+            tools:layout_editor_absoluteX="58dp"
+            tools:layout_editor_absoluteY="83dp" />
+
+        <Button
+            android:id="@+id/submitdonation_button"
+            android:layout_width="250dp"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="0dp"
+            android:backgroundTint="#3B3952"
+            android:fontFamily="serif"
+            android:text="Submit"
+            android:textSize="20sp"
+            tools:layout_editor_absoluteX="114dp"
+            tools:layout_editor_absoluteY="625dp"
+            tools:layout_marginBottom="50dp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/inputtext1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="180dp" />
+
+        <EditText
+            android:id="@+id/edittext1"
+            android:layout_width="350dp"
+            android:layout_height="60dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="180dp"
+            android:background="@drawable/border"
+            android:ems="10"
+            android:padding="10dp"
+            android:hint=" Pickup Where?"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/edittext4"
+            android:layout_width="350dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="460dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/border"
+            android:padding="10dp"
+            android:ems="10"
+            android:hint=" Pickup Day?"
+            android:inputType="text"
+            tools:layout_marginLeft="35dp" />
+
+        <CheckBox
+            android:id="@+id/checkBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="550dp"
+            android:fontFamily="serif"
+            android:text="I assure that food quality and hygiene has maintained." />
+    </RelativeLayout>

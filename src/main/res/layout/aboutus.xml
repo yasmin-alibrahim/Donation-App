@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/porcelain"
+    android:orientation="vertical"
+    tools:context=".activities.payment.PaymentActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            app:srcCompat="@drawable/custom_shapes"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="0dp" />
+
+        <TextView
+            android:id="@+id/paymentHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:padding="30dp"
+            android:text="About us"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/porcelain"
+            android:textSize="40dp" />
+    </FrameLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="30dp">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="We are the Helping Hands, a non-profit organization based in Dammam, Saudi Arabia. The primary goal of our app is to significantly reduce food waste by connecting surplus food from various sources with those in need, thereby addressing community hunger. This endeavor is rooted in values of compassion, sustainability, and inclusivity, aiming to foster a sense of social responsibility and community engagement. The app seeks to make food donation convenient and accessible, while also raising awareness about food waste and sustainability. Transparency and trust are key, ensuring the safety and quality of the food distributed. Collaborative efforts with stakeholders and continuous innovation are also central to the app's mission, as it strives to empower communities and promote sustainable practices, making a meaningful impact on both the environment and society. "
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Contact Us"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Email: contact@HelpingHands.org.sa" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Phone: +966 456 7890" />
+            <!--  User Query Section  -->
+            <EditText
+                android:id="@+id/editTextMessage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:hint="Your Message"
+                android:inputType="textMultiLine" />
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="0dp"
+                android:backgroundTint="#3B3952"
+                android:fontFamily="serif"
+                android:text="Submit"
+                android:textSize="20sp"
+                tools:layout_editor_absoluteX="114dp"
+                tools:layout_editor_absoluteY="625dp"
+                tools:layout_marginBottom="50dp" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
